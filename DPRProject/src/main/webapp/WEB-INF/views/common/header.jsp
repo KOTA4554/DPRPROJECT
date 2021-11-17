@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <head>
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,11 +29,13 @@
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/font-awesome.min.css"/>
 
 		<!-- Custom stlylesheet -->
+
 		<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style.css"/> 
 		<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/jeongho.css"/>
 		<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/common.css"/>
 		<script src="${pageContext.request.contextPath }/resources/js/jquery-3.6.0.min.js"></script>
 		<script src="${pageContext.request.contextPath }/resources/js/slick.min.js"></script>
+
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,6 +43,16 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
+		
+		<!-- jQuery Plugins -->
+		<script src="${pageContext.request.contextPath }/resources/js/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath }/resources/js/bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath }/resources/js/slick.min.js"></script>
+		<script src="${pageContext.request.contextPath }/resources/js/nouislider.min.js"></script>
+		<script src="${pageContext.request.contextPath }/resources/js/jquery.zoom.min.js"></script>
+		<script src="${pageContext.request.contextPath }/resources/js/main.js"></script>
+		
 </head>
 		<!-- HEADER -->
 		<header>
@@ -86,7 +99,10 @@
 							<div class="header-ctn">
 								<!-- Wishlist -->
 								<div>
-									<a href="#">
+
+									<a href="${pageContext.request.contextPath}/myPage/myPage.do">
+
+
 										<i class="fas fa-user"></i>
 										<span>My Page</span>
 										<!-- <div class="qty">2</div> -->
@@ -164,7 +180,7 @@
 				<!-- responsive-nav -->
 				<div id="responsive-nav">
 					<!-- NAV -->
-					
+
 					<div id="menu">
 					
 					<ul class="main-nav nav navbar-nav">
@@ -191,10 +207,13 @@
 					</ul>
 					</div>
 					</div>
+
 					<!-- /NAV -->
 				</div>
 				<!-- /responsive-nav -->
 			</div>
 			<!-- /container -->
 		</nav>
+
 		<!-- /NAVIGATION -->
+

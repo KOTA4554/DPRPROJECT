@@ -3,7 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
-	
 	<body>
 	<header>
 		<c:import url="views/common/header.jsp"/>
