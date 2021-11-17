@@ -3,6 +3,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>main page</title>
+
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
@@ -21,8 +29,13 @@
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/font-awesome.min.css"/>
 
 		<!-- Custom stlylesheet -->
-		<%-- <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style.css"/> --%>
+
+		<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/style.css"/> 
+		<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/jeongho.css"/>
 		<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/resources/css/common.css"/>
+		<script src="${pageContext.request.contextPath }/resources/js/jquery-3.6.0.min.js"></script>
+		<script src="${pageContext.request.contextPath }/resources/js/slick.min.js"></script>
+
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,6 +43,7 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
 		
 		<!-- jQuery Plugins -->
 		<script src="${pageContext.request.contextPath }/resources/js/jquery.min.js"></script>
@@ -85,7 +99,10 @@
 							<div class="header-ctn">
 								<!-- Wishlist -->
 								<div>
+
 									<a href="${pageContext.request.contextPath}/myPage/myPage.do">
+
+
 										<i class="fas fa-user"></i>
 										<span>My Page</span>
 										<!-- <div class="qty">2</div> -->
@@ -163,19 +180,40 @@
 				<!-- responsive-nav -->
 				<div id="responsive-nav">
 					<!-- NAV -->
+
+					<div id="menu">
+					
 					<ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="#">BEST</a></li>
-						<li><a href="#">의류</a></li>
-						<li><a href="#">슈즈</a></li>
-						<li><a href="#">가방</a></li>
-						<li><a href="#">액세서리</a></li>
-						<li><a href="#">쥬얼리</a></li>
-						<li><a href="#">SALES</a></li>
+						<li><a href="${pageContext.request.contextPath}/product/clothes.do">의류</a>
+							<ul>
+								<li><a href="/product/list?c1=0&c2=1">탑</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=2">니트웨어</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=3">셔츠/자켓</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=4">셔츠</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=5">수트</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=6">팬츠</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=7">언더웨어</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=8">비치웨어</a></li>&nbsp;
+								<li><a href="/product/list?c1=0&c2=9">기능성의류</a></li>&nbsp;
+							</ul>
+						</li>
+						<li><a href="/product/shoes">슈즈</a></li>
+							
+						<li><a href="${pageContext.request.contextPath}/product/bagpack.do">가방</a></li>
+						<li><a href="${pageContext.request.contextPath}/product/accessories.do">액세서리</a></li>
+						<li><a href="${pageContext.request.contextPath}/product/jewellery.do">쥬얼리</a></li>
+						<li><a href="${pageContext.request.contextPath}/product/clothes.do">SALES</a></li>
 					</ul>
+					</div>
+					</div>
+
 					<!-- /NAV -->
 				</div>
 				<!-- /responsive-nav -->
 			</div>
 			<!-- /container -->
 		</nav>
+
 		<!-- /NAVIGATION -->
+
